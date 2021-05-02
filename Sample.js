@@ -18,7 +18,7 @@ db.all('SELECT  Name,Email,Title,Date,time FROM Contacts JOIN Dates ON Contacts.
 });
 
 
-/*
+
 //لعرض مواعيد الاسبوع
 db.all('SELECT  Name,Email,Title,Date,time FROM Contacts JOIN Dates ON Contacts.DatesID = Dates.DatesID WHERE Date>="2021-04-29" AND Date<="2021-05-06"', function(err, table){
     if(err){
@@ -26,10 +26,9 @@ db.all('SELECT  Name,Email,Title,Date,time FROM Contacts JOIN Dates ON Contacts.
     }
     console.log(table);
 });
-*/
 
 
-/*
+
 //لعرض مواعيد الشهر
 db.all('SELECT  Name,Email,Title,Date,time FROM Contacts JOIN Dates ON Contacts.DatesID = Dates.DatesID WHERE Date>="2021-04-29" AND Date<="2021-05-29"', function(err, table){
     if(err){
@@ -37,7 +36,7 @@ db.all('SELECT  Name,Email,Title,Date,time FROM Contacts JOIN Dates ON Contacts.
     }
     console.log(table);
 });
-*/
+
 
 db.close( (err) => {
     if (err) {
