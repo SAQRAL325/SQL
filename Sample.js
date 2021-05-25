@@ -22,7 +22,7 @@ db.all("SELECT  "+AS+" FROM Contacts JOIN Dates ON Contacts.DatesID = Dates.Date
 });
 
 //لعرض مواعيد الاسبوع
-db.all("SELECT  "+AS+" FROM Contacts JOIN Dates ON Contacts.DatesID = Dates.DatesID WHERE Date>='"+date+"' AND Date<='"+datee+"'", function(err, table){
+db.all("SELECT  "+AS+" FROM Contacts JOIN Dates ON Contacts.DatesID = Dates.DatesID WHERE Date>='"+date+"' AND Date<='"+date+"'", function(err, table){
     if(err){
         return console.log(err.message);
     }
